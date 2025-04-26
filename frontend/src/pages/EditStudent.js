@@ -23,7 +23,7 @@ const EditStudent = () => {
   useEffect(() => {
     const fetchStudent = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/students/${id}`);
+        const response = await axios.get(`https://student-management-backend-ruxb.onrender.com/students/${id}`);
         const student = response.data;
         
         // Format date for the date input
@@ -48,7 +48,7 @@ const EditStudent = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.put(`http://localhost:5000/students/${id}`, studentData);
+      await axios.put(`https://student-management-backend-ruxb.onrender.com/students/${id}`, studentData);
       toast.success('Student updated successfully');
       navigate('/students');
     } catch (error) {
