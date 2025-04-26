@@ -27,7 +27,7 @@ const StudentList = () => {
   const deleteStudent = async (id) => {
     if (window.confirm('Are you sure you want to delete this student?')) {
       try {
-        await axios.delete(`http://localhost:5000/students/${id}`);
+        await axios.delete(`https://student-management-backend-ruxb.onrender.com/students/${id}`);
         toast.success('Student deleted successfully');
         fetchStudents();
       } catch (error) {
