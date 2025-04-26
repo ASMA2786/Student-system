@@ -21,7 +21,7 @@ const AddStudent = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5000/students', studentData);
+      await axios.post('https://student-management-backend-ruxb.onrender.com/students', studentData);
       toast.success('Student added successfully');
       navigate('/students');
     } catch (error) {
