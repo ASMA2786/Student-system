@@ -14,7 +14,7 @@ const StudentList = () => {
 
   const fetchStudents = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/students');
+      const response = await axios.get('https://student-management-backend-ruxb.onrender.com/students');
       setStudents(response.data);
       setLoading(false);
     } catch (error) {
