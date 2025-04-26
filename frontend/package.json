@@ -39,8 +39,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ],
-    "engines": {
+    "engines": [
       "node": "18.x"
-    }
+    ],
+    "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not op_mini all"
+  ]
   }
 }
